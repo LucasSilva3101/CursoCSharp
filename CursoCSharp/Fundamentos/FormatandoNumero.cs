@@ -1,25 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
 
-namespace CursoCSharp.Fundamentos {
-    internal class FormatandoNumero {
+namespace CursoCSharp.Fundamentos
+{
+    class FormatandoNumero
+    {
         public static void Executar() {
             double valor = 15.175;
-            Console.WriteLine(valor.ToString("F1")); // 1 casa decimal
-            Console.WriteLine(valor.ToString("C")); // moeda
-            Console.WriteLine(valor.ToString("P")); // porcentagem
-            Console.WriteLine(valor.ToString("#.##")); // 2 casas decimais, sem arredondar
+            Console.WriteLine(valor.ToString("F1"));
+            Console.WriteLine(valor.ToString("C"));
+            Console.WriteLine(valor.ToString("P"));
+            Console.WriteLine(valor.ToString("#.##"));
 
-            CultureInfo cultura = new CultureInfo("pt-BR");
-            Console.WriteLine(valor.ToString("C", cultura));
-
-            CultureInfo cultura2 = new CultureInfo("en-US");
-            Console.WriteLine(valor.ToString("C3", cultura2));
+            CultureInfo cultura = new CultureInfo("en-US");
+            Console.WriteLine(valor.ToString("C0", cultura));
 
             int inteiro = 256;
-            Console.WriteLine(inteiro.ToString("D3")); // 3 dígitos, preenchendo com zeros à esquerda
+            Console.WriteLine(inteiro.ToString("D10"));
         }
     }
 }

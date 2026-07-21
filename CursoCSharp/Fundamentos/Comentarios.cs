@@ -1,21 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace CursoCSharp.Fundamentos {
-    public class Comentarios {
+namespace CursoCSharp.Fundamentos
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    class Comentarios
+    {
         public static void Executar() {
+            // Cuidado com os comentários desnecessários
             Console.WriteLine("Código claro é sempre melhor!");
-            Console.WriteLine("O C# tem o XML Comments");
 
             /*
-             * Comentário de múltiplas linhas
+             * Esse é um comentário
+             * de múltiplas linhas...
              */
-
-            // Comentário de uma linha
-
-            // CTRL + K + C -> Comentar
-            // CTRL + K + U -> Descomentar
-            // Console.WriteLine("1");
-            // Console.WriteLine("2");
+            Console.WriteLine("O C# tem o XML Comments");
         }
     }
 }

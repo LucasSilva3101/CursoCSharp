@@ -2,58 +2,62 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CursoCSharp.Fundamentos {
-    internal class VariaveisEConstantes {
+namespace CursoCSharp.Fundamentos
+{
+    class VariaveisEConstantes
+    {
         public static void Executar() {
-
-            //tipo variavel = valor
-            double raio = 4.5; // = atriubui valor a variável
-            const double PI = 3.14; // const é uma constante, ou seja, não pode ser alterada depois de atribuída
+            // area da circunferencia
+            double raio = 4.5;
+            const double PI = 3.14;
 
             raio = 5.5;
+            // PI = 3.1415;
 
             double area = PI * raio * raio;
+            Console.WriteLine(area);
             Console.WriteLine("Área é " + area);
 
-
-            //Tipos inteiros
+            // Tipos internos
 
             bool estaChovendo = true;
-            Console.WriteLine("Está chovendo? " + estaChovendo);
+            Console.WriteLine("Está chovendo " + estaChovendo);
 
-            byte idade = 45; // byte é um tipo de dado que armazena valores inteiros de 0 a 255
-            Console.WriteLine("Idade: " + idade);
+            byte idade = 45;
+            Console.WriteLine("Idade " + idade);
 
-            sbyte saldoDeGols = sbyte.MinValue; // sbyte é um tipo de dado que armazena valores inteiros de -128 a 127
+            sbyte saldoDeGols = sbyte.MinValue;
+            Console.WriteLine("Saldo de Gols " + saldoDeGols);
 
-            short salario = short.MaxValue; // short é um tipo de dado que armazena valores inteiros de -32.768 a 32.767
-            Console.WriteLine("Salário: " + salario);
+            short salario = short.MaxValue;
+            Console.WriteLine("Salário " + salario);
 
-            int menorValorInt = int.MinValue; // int é um tipo de dado que armazena valores inteiros de -2.147.483.648 a 2.147.483.647
-            Console.WriteLine("Menor valor de int: " + menorValorInt);
+            int menorValorInt = int.MinValue; // Mais usado dos inteiros!
+            Console.WriteLine("Menor int " + menorValorInt);
 
-            uint populacaoBrasileira = 207_600_000; // uint é um tipo de dado que armazena valores inteiros de 0 a 4.294.967.295
-            Console.WriteLine("População brasileira: " + populacaoBrasileira);
+            uint populacaoBrasileira = 207_600_000;
+            Console.WriteLine("População Brasileira " + populacaoBrasileira);
 
-            long menorValorLong = long.MinValue; // long é um tipo de dado que armazena valores inteiros de -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807
-            Console.WriteLine("Menor valor de long: " + menorValorLong);
+            long menorValorLong = long.MinValue;
+            Console.WriteLine("Menor long " + menorValorLong);
 
-            ulong populacaoMundial = 7_600_000_000; // ulong é um tipo de dado que armazena valores inteiros de 0 a 18.446.744.073.709.551.615
-            Console.WriteLine("População mundial: " + populacaoMundial);
+            ulong populacaoMundial = 7_600_000_000;
+            Console.WriteLine("População Mundial " + populacaoMundial);
 
-            //Tipos flutuantes
+            float precoComputador = 1299.99F;
+            Console.WriteLine("Preço Computador " + precoComputador);
 
-            float precoComputador = 1299.99f; // float é um tipo de dado que armazena valores de ponto flutuante de precisão simples
-            Console.WriteLine("Preço do computador: " + precoComputador);
+            double valorDeMercadoDaApple = 1_000_000_000_000.00; // Mais usado dos reais!
+            Console.WriteLine("Valor Apple " + valorDeMercadoDaApple);
 
-            double valorDeMercadoDaApple = 1_000_000_000_000.00; // double é um tipo de dado que armazena valores de ponto flutuante de precisão dupla
-            Console.WriteLine("Valor de mercado da Apple: " + valorDeMercadoDaApple);
+            decimal distanciaEntreEstrelas = decimal.MaxValue;
+            Console.WriteLine("Distância entre Estrelas " + distanciaEntreEstrelas);
 
-            char letra = 'b'; // char é um tipo de dado que armazena um único caractere
-            Console.WriteLine("Letra: " + letra);
+            char letra = 'b';
+            Console.WriteLine("Letra " + letra);
 
-            string texto = "Seja bem vindo ao curso de C#"; // string é um tipo de dado que armazena uma sequência de caracteres
-            Console.WriteLine("Texto: " + texto);
+            string texto = "Seja bem vindo ao Curso de C#!";
+            Console.WriteLine(texto);
         }
     }
 }

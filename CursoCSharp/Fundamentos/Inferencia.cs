@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CursoCSharp.Fundamentos {
-    internal class Inferencia {
+namespace CursoCSharp.Fundamentos
+{
+    class Inferencia
+    {
         public static void Executar() {
-            var nome = "Leonardo"; 
+            var nome = "Leonardo";
+            // nome = 123;
             Console.WriteLine(nome);
 
-            var idade = 32; 
+            // int idade;
+            var idade = 32;
             Console.WriteLine(idade);
-            //var nunca pode ser iniciado vazio
-
-            var preco = 4.99;
-            Console.WriteLine(preco);
-            // nome = 123; // erro de compilação, pois o tipo da variável nome é string e não pode ser atribuído um valor inteiro
 
             int a;
             a = 3;
